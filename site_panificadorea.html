@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panificadora Olha o Pão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #e48d46;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 250px; /* Ajuste o tamanho da logo conforme necessário */
+            height: auto;
+            display: block;
+            margin: 200 auto; /* Centraliza a logo horizontalmente */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .products, .contact {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .products h2, .contact h2 {
+            margin-top: 0;
+        }
+        .product {
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-width: 300px;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact form button {
+            background-color: #e48d46;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #e48d46;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Panificadora Olha o Pão</h1>
+            <nav>
+                <a href="#products">Produtos</a>
+                <a href="#contact">Contato</a>
+                <img src="Olha_o_pão-removebg-preview.png" alt="Logo da Empresa">
+
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="products" class="products">
+            <h2>Nossos Produtos</h2>
+            <div class="product">
+                <h3>Pão Francês</h3>
+                <img src="paofrances.jpg" alt="Pão Francês">
+                <p>Delicioso pão francês fresquinho, ideal para seu café da manhã.</p>
+                <h2>R$7,99 o Kilo</h2>
+            </div>
+            <div class="product">
+                <h3>Croissant</h3>
+                <img src="croissant.jpg" alt="Croissant">
+                <p>Croissant amanteigado, perfeito para uma sobremesa.</p>
+                <h2>R$0,79 a Unidade</h2>
+            </div>
+            <div class="product">
+                <h3>Cueca Virada</h3>
+                <img src="cueca.jpg" alt="cueca">
+                <p>Cueca Virada, perfeito para uma sobremesa.</p>
+                <h2>R$0,79 a Unidade</h2>
+            </div>
+            <div class="product">
+                <h3>Pão de Queijo</h3>
+                <img src="paodequeijo.jpg" alt="paodequiejo">
+                <p>Pão de Queijo, fresquinho, ideal para seu café da manhã.</p>
+                <h2>R$14,00 o Kilo</h2>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:contato@panificadora.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
